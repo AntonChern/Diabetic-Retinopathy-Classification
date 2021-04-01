@@ -7,3 +7,5 @@ before_install:
   - pip install tensorflow
   - pip install keras
   - pip install numpy
+script:
+  - python main.py
