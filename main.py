@@ -111,7 +111,7 @@ def train(test_dir, img_size, batch_size, nb_test_samples, isForTraining, isBina
 
 if __name__ == "__main__":
 
-    i_want_to_train = False
+    i_want_to_train = True
 
     if i_want_to_train:
         train(train_dir='trainBalancedBin',
@@ -122,7 +122,7 @@ if __name__ == "__main__":
               nb_train_samples=4064,
               nb_validation_samples=800,
               nb_test_samples=800,
-              isForTraining=i_want_to_train, isBinary=True, number_epochs=2, saveName='precision200')
+              isForTraining=i_want_to_train, isBinary=True, number_epochs=2, saveName='network200')
     else:
         train(test_dir='testBalancedBin',
               img_size=200,
